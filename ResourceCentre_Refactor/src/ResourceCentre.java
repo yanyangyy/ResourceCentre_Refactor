@@ -10,6 +10,7 @@ public class ResourceCentre {
 	private static final int OPTION_VIEW = 1;
 	private static final int OPTION_QUIT = 5;
 
+
 	public static void main(String[] args) {
 
 		ArrayList<Camcorder> camcorderList = new ArrayList<Camcorder>();
@@ -39,7 +40,9 @@ public class ResourceCentre {
 				
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
+
 				if (itemType == ITEM_TYPE_CAMCORDER) {
+
 					// Add a camcorder
 					Camcorder cc = inputCamcorder();
 					ResourceCentre.addCamcorder(camcorderList, cc);
